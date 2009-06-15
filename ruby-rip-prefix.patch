@@ -1,0 +1,12 @@
+diff -ur rip-o/lib/rip/setup.rb rip/lib/rip/setup.rb
+--- rip-o/lib/rip/setup.rb	2009-06-14 00:38:00.000000000 -0600
++++ rip/lib/rip/setup.rb	2009-06-14 19:30:07.000000000 -0600
+@@ -25,7 +25,7 @@
+ 
+     # caution: RbConfig::CONFIG['bindir'] does NOT work for me
+     # on OS X
+-    BINDIR = File.join('/', 'usr', 'local', 'bin')
++    BINDIR = File.join('/', 'usr', 'bin')
+ 
+     # Indicates that Rip isn't properly installed.
+     class InstallationError < StandardError; end
